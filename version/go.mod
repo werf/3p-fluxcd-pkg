@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/version
+module github.com/werf/3p-fluxcd-pkg/version
 
 go 1.25.0
 

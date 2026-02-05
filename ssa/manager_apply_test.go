@@ -34,8 +34,8 @@ import (
 	"k8s.io/client-go/rest"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/ssa/normalize"
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/normalize"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 func TestApply(t *testing.T) {
@@ -391,7 +391,7 @@ func TestApply_Force(t *testing.T) {
 		{
 			secretWithFinalizer := secretClone.DeepCopy()
 
-			unstructured.SetNestedStringSlice(secretWithFinalizer.Object, []string{"fluxcd.io/demo-finalizer"}, "metadata", "finalizers")
+			unstructured.SetNestedStringSlice(secretWithFinalizer.Object, []string{"werf.io/demo-finalizer"}, "metadata", "finalizers")
 			if err := manager.client.Update(ctx, secretWithFinalizer); err != nil {
 				t.Fatal(err)
 			}
@@ -472,7 +472,7 @@ func TestApply_Force(t *testing.T) {
 		}
 
 		meta := map[string]string{
-			"fluxcd.io/force": "true",
+			"werf.io/force": "true",
 		}
 		st.SetAnnotations(meta)
 
@@ -633,7 +633,7 @@ func TestApply_SkipsExcluded(t *testing.T) {
 
 	opts := DefaultApplyOptions()
 	opts.ExclusionSelector = map[string]string{
-		"ssa.fluxcd.io/exclude": "true",
+		"ssa.werf.io/exclude": "true",
 	}
 	skippedSubject := fmt.Sprintf("Secret/%[1]s/data-%[1]s-excluded", id)
 
@@ -701,7 +701,7 @@ func TestApply_Exclusions(t *testing.T) {
 		}
 
 		meta := map[string]string{
-			"fluxcd.io/ignore": "true",
+			"werf.io/ignore": "true",
 		}
 		configMapClone.SetAnnotations(meta)
 
@@ -746,7 +746,7 @@ func TestApply_Exclusions(t *testing.T) {
 	t.Run("skips apply when desired state is annotated", func(t *testing.T) {
 		configMapClone := configMap.DeepCopy()
 		meta := map[string]string{
-			"fluxcd.io/ignore": "true",
+			"werf.io/ignore": "true",
 		}
 		configMapClone.SetAnnotations(meta)
 
@@ -768,7 +768,7 @@ func TestApply_IfNotPresent(t *testing.T) {
 	defer cancel()
 
 	meta := map[string]string{
-		"fluxcd.io/ssa": "IfNotPresent",
+		"werf.io/ssa": "IfNotPresent",
 	}
 
 	id := generateName("skip")
@@ -815,7 +815,7 @@ func TestApply_IfNotPresent(t *testing.T) {
 
 	t.Run("resume apply when is annotated Override", func(t *testing.T) {
 		override := map[string]string{
-			"fluxcd.io/ssa": "Override",
+			"werf.io/ssa": "Override",
 		}
 		configMapClone.SetAnnotations(override)
 

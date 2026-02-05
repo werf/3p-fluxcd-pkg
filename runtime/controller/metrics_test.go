@@ -25,12 +25,12 @@ import (
 	"k8s.io/client-go/rest"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/pkg/runtime/conditions/testdata"
-	"github.com/fluxcd/pkg/runtime/controller"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions/testdata"
+	"github.com/werf/3p-fluxcd-pkg/runtime/controller"
 )
 
 func TestMetrics_IsDelete(t *testing.T) {
-	testFinalizers := []string{"finalizers.fluxcd.io", "finalizers.foo.bar"}
+	testFinalizers := []string{"finalizers.werf.io", "finalizers.foo.bar"}
 	timenow := metav1.NewTime(time.Now())
 
 	tests := []struct {
@@ -41,7 +41,7 @@ func TestMetrics_IsDelete(t *testing.T) {
 		want            bool
 	}{
 		{"equal finalizers, no delete timestamp", testFinalizers, nil, testFinalizers, false},
-		{"partial finalizers, no delete timestamp", []string{"finalizers.fluxcd.io"}, nil, testFinalizers, false},
+		{"partial finalizers, no delete timestamp", []string{"finalizers.werf.io"}, nil, testFinalizers, false},
 		{"unknown finalizers, no delete timestamp", []string{"foo"}, nil, testFinalizers, false},
 		{"unknown finalizers, delete timestamp", []string{"foo"}, &timenow, testFinalizers, true},
 		{"no finalizers, no delete timestamp", []string{}, nil, testFinalizers, false},

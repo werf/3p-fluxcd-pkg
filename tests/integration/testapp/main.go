@@ -45,17 +45,17 @@ import (
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling/clusterreader"
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling/engine"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/aws"
-	"github.com/fluxcd/pkg/auth/azure"
-	"github.com/fluxcd/pkg/auth/gcp"
-	authutils "github.com/fluxcd/pkg/auth/utils"
-	"github.com/fluxcd/pkg/cache"
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
-	"github.com/fluxcd/pkg/git/repository"
-	runtimeClient "github.com/fluxcd/pkg/runtime/client"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/aws"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth/gcp"
+	authutils "github.com/werf/3p-fluxcd-pkg/auth/utils"
+	"github.com/werf/3p-fluxcd-pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
+	runtimeClient "github.com/werf/3p-fluxcd-pkg/runtime/client"
 )
 
 // registry and repo flags are to facilitate testing of two login scenarios:

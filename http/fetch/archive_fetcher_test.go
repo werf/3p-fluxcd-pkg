@@ -25,8 +25,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/tar"
-	"github.com/fluxcd/pkg/testserver"
+	"github.com/werf/3p-fluxcd-pkg/tar"
+	"github.com/werf/3p-fluxcd-pkg/testserver"
 )
 
 func TestArchiveFetcher_FetchWithContext(t *testing.T) {

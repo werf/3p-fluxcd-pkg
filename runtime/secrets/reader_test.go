@@ -29,7 +29,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/fluxcd/pkg/runtime/secrets"
+	"github.com/werf/3p-fluxcd-pkg/runtime/secrets"
 )
 
 func TestTLSConfigFromSecretRef(t *testing.T) {

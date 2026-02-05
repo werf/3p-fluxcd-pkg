@@ -33,7 +33,7 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerservice/armcontainerservice"
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
 )
 
 type mockImplementation struct {

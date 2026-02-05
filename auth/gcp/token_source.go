@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/oauth2"
 
-	auth "github.com/fluxcd/pkg/auth"
+	auth "github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 type tokenSource struct {

@@ -28,11 +28,11 @@ import (
 	"time"
 
 	socks5 "github.com/armon/go-socks5"
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
-	"github.com/fluxcd/pkg/git/repository"
-	"github.com/fluxcd/pkg/ssh"
 	. "github.com/onsi/gomega"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/ssh"
 )
 
 var proxiedRequests int32

@@ -30,8 +30,8 @@ import (
 
 	"github.com/fluxcd/go-git-providers/gitlab"
 	"github.com/fluxcd/go-git-providers/gitprovider"
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
 )
 
 const (

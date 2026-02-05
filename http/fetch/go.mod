@@ -1,10 +1,10 @@
-module github.com/fluxcd/pkg/http/fetch
+module github.com/werf/3p-fluxcd-pkg/http/fetch
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/tar => ../../tar
-	github.com/fluxcd/pkg/testserver => ../../testserver
+	github.com/werf/3p-fluxcd-pkg/tar => ../../tar
+	github.com/werf/3p-fluxcd-pkg/testserver => ../../testserver
 )
 
 // Replace digest lib to master to gather access to BLAKE3.
@@ -12,13 +12,13 @@ replace (
 replace github.com/opencontainers/go-digest => github.com/opencontainers/go-digest v1.0.1-0.20220411205349-bde1400a84be
 
 require (
-	github.com/fluxcd/pkg/tar v0.16.0
-	github.com/fluxcd/pkg/testserver v0.13.0
 	github.com/go-logr/logr v1.4.3
 	github.com/hashicorp/go-retryablehttp v0.7.8
 	github.com/onsi/gomega v1.38.2
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/go-digest/blake3 v0.0.0-20250116041648-1e56c6daea3b
+	github.com/werf/3p-fluxcd-pkg/tar v0.16.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/testserver v0.13.0-nelm.1
 )
 
 require (

@@ -26,17 +26,17 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fluxcd/pkg/apis/meta"
 	"github.com/google/go-cmp/cmp"
 	. "github.com/onsi/gomega"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/runtime/conditions"
-	"github.com/fluxcd/pkg/runtime/conditions/testdata"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions/testdata"
 )
 
 func TestPatchHelper(t *testing.T) {
@@ -85,7 +85,7 @@ func TestPatchHelper(t *testing.T) {
 			t.Log("Modifying the OwnerReferences")
 			refs := []metav1.OwnerReference{
 				{
-					APIVersion: "fake.toolkit.fluxcd.io/v1",
+					APIVersion: "fake.werf.io/v1",
 					Kind:       "Fake",
 					Name:       "test",
 					UID:        types.UID("fake-uid"),
@@ -583,7 +583,7 @@ func TestPatchHelper(t *testing.T) {
 			g.Expect(err).NotTo(HaveOccurred())
 
 			t.Log("Adding a finalizer")
-			obj.Finalizers = append(obj.Finalizers, "test.finalizers.fluxcd.io")
+			obj.Finalizers = append(obj.Finalizers, "test.finalizers.werf.io")
 
 			t.Log("Patching the object")
 			g.Expect(patcher.Patch(ctx, obj)).To(Succeed())
@@ -603,7 +603,7 @@ func TestPatchHelper(t *testing.T) {
 			g := NewWithT(t)
 
 			obj := obj.DeepCopy()
-			obj.Finalizers = append(obj.Finalizers, "test.finalizers.fluxcd.io")
+			obj.Finalizers = append(obj.Finalizers, "test.finalizers.werf.io")
 
 			t.Log("Creating the object")
 			g.Expect(env.Create(ctx, obj)).To(Succeed())

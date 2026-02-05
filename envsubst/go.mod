@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/envsubst
+module github.com/werf/3p-fluxcd-pkg/envsubst
 
 go 1.25.0
 

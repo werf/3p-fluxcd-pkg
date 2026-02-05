@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/ssh
+module github.com/werf/3p-fluxcd-pkg/ssh
 
 go 1.25.0
 

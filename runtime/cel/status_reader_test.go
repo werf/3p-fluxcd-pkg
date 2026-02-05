@@ -30,8 +30,8 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/fluxcd/pkg/apis/kustomize"
-	"github.com/fluxcd/pkg/runtime/cel"
+	"github.com/werf/3p-fluxcd-pkg/apis/kustomize"
+	"github.com/werf/3p-fluxcd-pkg/runtime/cel"
 )
 
 func TestStatusReader_Supports(t *testing.T) {

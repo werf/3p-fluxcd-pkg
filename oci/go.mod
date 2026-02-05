@@ -1,22 +1,22 @@
-module github.com/fluxcd/pkg/oci
+module github.com/werf/3p-fluxcd-pkg/oci
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/sourceignore => ../sourceignore
-	github.com/fluxcd/pkg/tar => ../tar
-	github.com/fluxcd/pkg/version => ../version
+	github.com/werf/3p-fluxcd-pkg/sourceignore => ../sourceignore
+	github.com/werf/3p-fluxcd-pkg/tar => ../tar
+	github.com/werf/3p-fluxcd-pkg/version => ../version
 )
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/distribution/distribution/v3 v3.0.0
-	github.com/fluxcd/pkg/sourceignore v0.15.0
-	github.com/fluxcd/pkg/tar v0.16.0
-	github.com/fluxcd/pkg/version v0.11.0
 	github.com/google/go-containerregistry v0.20.6
 	github.com/onsi/gomega v1.38.2
 	github.com/sirupsen/logrus v1.9.3
+	github.com/werf/3p-fluxcd-pkg/sourceignore v0.15.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/tar v0.16.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/version v0.11.0-nelm.1
 )
 
 require (

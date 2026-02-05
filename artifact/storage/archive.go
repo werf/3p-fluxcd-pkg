@@ -29,11 +29,11 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/format/gitignore"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/oci"
-	"github.com/fluxcd/pkg/sourceignore"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/oci"
+	"github.com/werf/3p-fluxcd-pkg/sourceignore"
 
-	intdigest "github.com/fluxcd/pkg/artifact/digest"
+	intdigest "github.com/werf/3p-fluxcd-pkg/artifact/digest"
 )
 
 const (

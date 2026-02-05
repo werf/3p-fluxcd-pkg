@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/cache"
 )
 
 // GetAccessToken returns an access token for accessing resources in the given cloud provider.

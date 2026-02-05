@@ -38,7 +38,7 @@ import (
 	"github.com/fluxcd/cli-utils/pkg/kstatus/status"
 	"github.com/fluxcd/cli-utils/pkg/object"
 
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 func TestWaitForSet(t *testing.T) {
@@ -54,7 +54,7 @@ func TestWaitForSet(t *testing.T) {
 
 	manager.SetOwnerLabels(objects, "infra", "default")
 
-	_, crd := getFirstObject(objects, "CustomResourceDefinition", "clustertests.testing.fluxcd.io")
+	_, crd := getFirstObject(objects, "CustomResourceDefinition", "clustertests.testing.werf.io")
 	_, cr := getFirstObject(objects, "ClusterTest", id)
 
 	t.Run("waits for CRD and CR", func(t *testing.T) {
@@ -78,7 +78,7 @@ func TestWaitForSet(t *testing.T) {
 
 		clusterCR := &unstructured.Unstructured{}
 		clusterCR.SetGroupVersionKind(schema.GroupVersionKind{
-			Group:   "testing.fluxcd.io",
+			Group:   "testing.werf.io",
 			Kind:    "ClusterTest",
 			Version: "v1",
 		})
@@ -350,7 +350,7 @@ func TestWaitForSetTermination(t *testing.T) {
 
 	_, namespace := getFirstObject(objects, "Namespace", id)
 	meta := map[string]string{
-		"fluxcd.io/prune": "Disabled",
+		"werf.io/prune": "Disabled",
 	}
 	namespace.SetAnnotations(meta)
 	manager.SetOwnerLabels(objects, "test", id)

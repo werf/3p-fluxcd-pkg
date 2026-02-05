@@ -34,8 +34,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
 )
 
 func TestProvider_NewControllerToken(t *testing.T) {

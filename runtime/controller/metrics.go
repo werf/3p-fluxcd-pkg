@@ -20,15 +20,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/fluxcd/pkg/runtime/conditions"
 	"github.com/go-logr/logr"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/reference"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/runtime/metrics"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/runtime/metrics"
 )
 
 // Metrics is a helper struct that adds the capability for recording GitOps Toolkit standard metrics to a reconciler.

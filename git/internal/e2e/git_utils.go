@@ -22,9 +22,9 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
-	"github.com/fluxcd/pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
 )
 
 func newClient(gitClient, tmp string, authOptions *git.AuthOptions, insecure bool) (repository.Client, error) {

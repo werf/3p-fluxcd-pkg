@@ -29,7 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	eventv1 "github.com/fluxcd/pkg/apis/event/v1beta1"
+	eventv1 "github.com/werf/3p-fluxcd-pkg/apis/event/v1beta1"
 )
 
 func TestEventRecorder_AnnotatedEventf(t *testing.T) {
@@ -46,16 +46,16 @@ func TestEventRecorder_AnnotatedEventf(t *testing.T) {
 					Name:      "webapp",
 					Namespace: "gitops-system",
 					Annotations: map[string]string{
-						"event.toolkit.fluxcd.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
-						"event.toolkit.fluxcd.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
+						"event.werf.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
+						"event.werf.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
 					},
 				},
 			},
 			inputAnnotations: map[string]string{"test": "true"},
 			expectedMetadata: map[string]string{
-				"test":                                 "true",
-				"event.toolkit.fluxcd.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
-				"event.toolkit.fluxcd.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
+				"test":                       "true",
+				"event.werf.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
+				"event.werf.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
 			},
 		},
 		{
@@ -65,15 +65,15 @@ func TestEventRecorder_AnnotatedEventf(t *testing.T) {
 					Name:      "webapp",
 					Namespace: "gitops-system",
 					Annotations: map[string]string{
-						"event.toolkit.fluxcd.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
-						"event.toolkit.fluxcd.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
+						"event.werf.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
+						"event.werf.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
 					},
 				},
 			},
 			inputAnnotations: nil,
 			expectedMetadata: map[string]string{
-				"event.toolkit.fluxcd.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
-				"event.toolkit.fluxcd.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
+				"event.werf.io/deploymentID": "e076e315-5a48-41c3-81c8-8d8bdee7d74d",
+				"event.werf.io/image":        "ghcr.io/stefanprodan/podinfo:6.5.0",
 			},
 		},
 		{

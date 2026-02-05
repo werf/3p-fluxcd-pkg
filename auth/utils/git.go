@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
 )
 
 // GitCredentials contains authentication data needed in order to access a Git

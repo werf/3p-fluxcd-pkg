@@ -29,9 +29,9 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/repository"
-	"github.com/fluxcd/pkg/gittestserver"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/gittestserver"
 )
 
 func TestNewClient(t *testing.T) {

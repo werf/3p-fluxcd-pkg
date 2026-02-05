@@ -22,9 +22,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fluxcd/pkg/sourceignore"
 	"github.com/go-git/go-git/v5/plumbing/format/gitignore"
 	. "github.com/onsi/gomega"
+	"github.com/werf/3p-fluxcd-pkg/sourceignore"
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 )
 

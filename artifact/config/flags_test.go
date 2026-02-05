@@ -23,7 +23,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/spf13/pflag"
 
-	"github.com/fluxcd/pkg/artifact/config"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
 )
 
 func Test_Options_BindFlags(t *testing.T) {

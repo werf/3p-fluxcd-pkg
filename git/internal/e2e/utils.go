@@ -36,9 +36,9 @@ import (
 	"github.com/google/uuid"
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/repository"
-	"github.com/fluxcd/pkg/ssh"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/ssh"
 )
 
 var letterRunes = []rune("abcdefghijklmnopqrstuvwxyz1234567890")

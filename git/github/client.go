@@ -30,7 +30,7 @@ import (
 	"github.com/bradleyfalzon/ghinstallation/v2"
 	"golang.org/x/net/http/httpproxy"
 
-	"github.com/fluxcd/pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/cache"
 )
 
 const (

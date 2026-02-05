@@ -1,28 +1,22 @@
-module github.com/fluxcd/pkg/tests/integration
+module github.com/werf/3p-fluxcd-pkg/tests/integration
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/apis/meta => ../../apis/meta
-	github.com/fluxcd/pkg/auth => ../../auth
-	github.com/fluxcd/pkg/cache => ../../cache
-	github.com/fluxcd/pkg/git => ../../git
-	github.com/fluxcd/pkg/git/gogit => ../../git/gogit
-	github.com/fluxcd/pkg/gittestserver => ../../gittestserver
-	github.com/fluxcd/pkg/runtime => ../../runtime
-	github.com/fluxcd/pkg/ssh => ../../ssh
-	github.com/fluxcd/pkg/version => ../../version
+	github.com/werf/3p-fluxcd-pkg/apis/meta => ../../apis/meta
+	github.com/werf/3p-fluxcd-pkg/auth => ../../auth
+	github.com/werf/3p-fluxcd-pkg/cache => ../../cache
+	github.com/werf/3p-fluxcd-pkg/git => ../../git
+	github.com/werf/3p-fluxcd-pkg/git/gogit => ../../git/gogit
+	github.com/werf/3p-fluxcd-pkg/gittestserver => ../../gittestserver
+	github.com/werf/3p-fluxcd-pkg/runtime => ../../runtime
+	github.com/werf/3p-fluxcd-pkg/ssh => ../../ssh
+	github.com/werf/3p-fluxcd-pkg/version => ../../version
 )
 
 require (
 	github.com/elazarl/goproxy v1.7.2
 	github.com/fluxcd/cli-utils v0.36.0-flux.15
-	github.com/fluxcd/pkg/apis/meta v1.23.0
-	github.com/fluxcd/pkg/auth v0.33.0
-	github.com/fluxcd/pkg/cache v0.12.0
-	github.com/fluxcd/pkg/git v0.38.0
-	github.com/fluxcd/pkg/git/gogit v0.42.0
-	github.com/fluxcd/pkg/runtime v0.91.0
 	github.com/fluxcd/test-infra/tftestenv v0.0.0-20250626232827-e0ca9c3f8d7b
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/google/go-containerregistry v0.20.6
@@ -31,6 +25,12 @@ require (
 	github.com/hashicorp/terraform-json v0.27.2
 	github.com/microsoft/azure-devops-go-api/azuredevops/v7 v7.1.0
 	github.com/onsi/gomega v1.38.2
+	github.com/werf/3p-fluxcd-pkg/apis/meta v1.23.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/auth v0.33.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/cache v0.12.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/git v0.38.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/git/gogit v0.42.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/runtime v0.91.0-nelm.1
 	k8s.io/api v0.34.2
 	k8s.io/apimachinery v0.34.2
 	k8s.io/client-go v0.34.2
@@ -86,8 +86,6 @@ require (
 	github.com/evanphx/json-patch/v5 v5.9.11 // indirect
 	github.com/exponent-io/jsonpath v0.0.0-20210407135951-1de76d718b3f // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/fluxcd/pkg/ssh v0.23.0 // indirect
-	github.com/fluxcd/pkg/version v0.11.0 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/go-errors/errors v1.5.1 // indirect
@@ -152,6 +150,8 @@ require (
 	github.com/spf13/cobra v1.9.1 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/vbatts/tar-split v0.12.1 // indirect
+	github.com/werf/3p-fluxcd-pkg/ssh v0.23.0-nelm.1 // indirect
+	github.com/werf/3p-fluxcd-pkg/version v0.11.0-nelm.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xlab/treeprint v1.2.0 // indirect

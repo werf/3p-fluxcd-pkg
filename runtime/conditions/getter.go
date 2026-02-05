@@ -27,7 +27,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 // Getter interface defines methods that a Kubernetes resource object should implement in order to use the conditions

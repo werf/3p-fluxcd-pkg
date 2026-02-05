@@ -26,7 +26,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/fluxcd/pkg/envsubst/path"
+	"github.com/werf/3p-fluxcd-pkg/envsubst/path"
 )
 
 // defines a parameter substitution function.

@@ -21,7 +21,7 @@ import (
 
 	"github.com/google/go-containerregistry/pkg/authn"
 
-	"github.com/fluxcd/pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 // GetArtifactRegistryCredentials retrieves the registry credentials for the

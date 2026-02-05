@@ -26,8 +26,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/pkg/apis/acl"
-	"github.com/fluxcd/pkg/runtime/testenv"
+	"github.com/werf/3p-fluxcd-pkg/apis/acl"
+	"github.com/werf/3p-fluxcd-pkg/runtime/testenv"
 )
 
 func TestAclAuthorization(t *testing.T) {

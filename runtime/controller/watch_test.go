@@ -27,8 +27,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/event"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/runtime/controller"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/runtime/controller"
 )
 
 func Test_WatchOptions_BindFlags(t *testing.T) {
@@ -50,7 +50,7 @@ func Test_WatchOptions_BindFlags(t *testing.T) {
 			ObjectMeta: metav1.ObjectMeta{
 				Name: "t1",
 				Labels: map[string]string{
-					"sharding.fluxcd.io/shard": "shard1",
+					"sharding.werf.io/shard": "shard1",
 				},
 			},
 		},
@@ -62,7 +62,7 @@ func Test_WatchOptions_BindFlags(t *testing.T) {
 			ObjectMeta: metav1.ObjectMeta{
 				Name: "t2",
 				Labels: map[string]string{
-					"sharding.fluxcd.io/shard": "shard2",
+					"sharding.werf.io/shard": "shard2",
 				},
 			},
 		},
@@ -82,25 +82,25 @@ func Test_WatchOptions_BindFlags(t *testing.T) {
 		},
 		{
 			name:          "flag selects objects by label key val",
-			commandLine:   []string{"--watch-label-selector=sharding.fluxcd.io/shard=shard1"},
+			commandLine:   []string{"--watch-label-selector=sharding.werf.io/shard=shard1"},
 			objects:       objects,
 			expectedMatch: []string{"t1"},
 		},
 		{
 			name:          "flag selects objects by label exclusion expression",
-			commandLine:   []string{"--watch-label-selector=sharding.fluxcd.io/shard, sharding.fluxcd.io/shard notin (shard1)"},
+			commandLine:   []string{"--watch-label-selector=sharding.werf.io/shard, sharding.werf.io/shard notin (shard1)"},
 			objects:       objects,
 			expectedMatch: []string{"t2"},
 		},
 		{
 			name:          "flag selects objects by label inclusion expression",
-			commandLine:   []string{"--watch-label-selector=sharding.fluxcd.io/shard in (shard1, shard2)"},
+			commandLine:   []string{"--watch-label-selector=sharding.werf.io/shard in (shard1, shard2)"},
 			objects:       objects,
 			expectedMatch: []string{"t1", "t2"},
 		},
 		{
 			name:          "flag selects objects with no matching labels",
-			commandLine:   []string{"--watch-label-selector=sharding.fluxcd.io/shard notin (shard1, shard2)"},
+			commandLine:   []string{"--watch-label-selector=sharding.werf.io/shard notin (shard1, shard2)"},
 			objects:       objects,
 			expectedMatch: []string{"t0"},
 		},

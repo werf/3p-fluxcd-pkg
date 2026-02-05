@@ -28,7 +28,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 // DeleteOptions contains options for delete requests.

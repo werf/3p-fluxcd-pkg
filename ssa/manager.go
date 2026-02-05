@@ -24,7 +24,7 @@ import (
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling"
 	"github.com/fluxcd/cli-utils/pkg/object"
 
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 // ResourceManager reconciles Kubernetes resources onto the target cluster using server-side apply.

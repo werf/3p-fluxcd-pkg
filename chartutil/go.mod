@@ -1,18 +1,18 @@
-module github.com/fluxcd/pkg/chartutil
+module github.com/werf/3p-fluxcd-pkg/chartutil
 
 go 1.25.0
 
-replace github.com/fluxcd/pkg/apis/meta => ../apis/meta
+replace github.com/werf/3p-fluxcd-pkg/apis/meta => ../apis/meta
 
 // Replace digest lib to master to gather access to BLAKE3.
 // xref: https://github.com/opencontainers/go-digest/pull/66
 replace github.com/opencontainers/go-digest => github.com/opencontainers/go-digest v1.0.1-0.20231025023718-d50d2fec9c98
 
 require (
-	github.com/fluxcd/pkg/apis/meta v1.23.0
 	github.com/go-logr/logr v1.4.3
 	github.com/onsi/gomega v1.38.2
 	github.com/opencontainers/go-digest v1.0.0
+	github.com/werf/3p-fluxcd-pkg/apis/meta v1.23.0-nelm.1
 	go.yaml.in/yaml/v2 v2.4.3
 	helm.sh/helm/v3 v3.19.2
 	k8s.io/api v0.34.2

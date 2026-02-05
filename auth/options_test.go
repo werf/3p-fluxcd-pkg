@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fluxcd/pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 func TestOptions_GetHTTPClient(t *testing.T) {

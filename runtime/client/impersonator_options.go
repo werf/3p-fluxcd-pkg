@@ -27,7 +27,7 @@ import (
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling"
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling/engine"
 
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 // ImpersonatorOption is a functional option for configuring the Impersonator.

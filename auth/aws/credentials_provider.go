@@ -22,7 +22,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 
-	"github.com/fluxcd/pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 type credentialsProvider struct {

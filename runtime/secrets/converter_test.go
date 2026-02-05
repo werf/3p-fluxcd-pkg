@@ -31,7 +31,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/fluxcd/pkg/runtime/secrets"
+	"github.com/werf/3p-fluxcd-pkg/runtime/secrets"
 )
 
 func TestAuthMethodsFromSecret(t *testing.T) {

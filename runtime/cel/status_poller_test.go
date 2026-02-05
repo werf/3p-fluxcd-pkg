@@ -30,8 +30,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/apis/kustomize"
-	"github.com/fluxcd/pkg/runtime/cel"
+	"github.com/werf/3p-fluxcd-pkg/apis/kustomize"
+	"github.com/werf/3p-fluxcd-pkg/runtime/cel"
 )
 
 func TestPollerWithCustomHealthChecks(t *testing.T) {

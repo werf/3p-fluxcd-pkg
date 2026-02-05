@@ -28,10 +28,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
-	"github.com/fluxcd/pkg/git/repository"
 	"github.com/go-git/go-git/v5/plumbing"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
 )
 
 const (

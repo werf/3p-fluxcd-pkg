@@ -17,7 +17,7 @@ limitations under the License.
 package testdata
 
 import (
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -25,11 +25,11 @@ import (
 )
 
 // +kubebuilder:object:generate=true
-// +groupName=fake.toolkit.fluxcd.io
+// +groupName=fake.werf.io
 // +versionName=v1
 
 const (
-	FakeGroupName = "fake.toolkit.fluxcd.io"
+	FakeGroupName = "fake.werf.io"
 	FakeVersion   = "v1"
 )
 

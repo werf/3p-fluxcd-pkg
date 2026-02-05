@@ -39,9 +39,9 @@ import (
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 	"sigs.k8s.io/yaml"
 
-	"github.com/fluxcd/pkg/apis/kustomize"
-	securefs "github.com/fluxcd/pkg/kustomize/filesys"
-	"github.com/fluxcd/pkg/sourceignore"
+	"github.com/werf/3p-fluxcd-pkg/apis/kustomize"
+	securefs "github.com/werf/3p-fluxcd-pkg/kustomize/filesys"
+	"github.com/werf/3p-fluxcd-pkg/sourceignore"
 )
 
 const (

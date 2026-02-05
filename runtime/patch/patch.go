@@ -36,7 +36,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 
-	"github.com/fluxcd/pkg/runtime/conditions"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions"
 )
 
 // Helper is a utility for ensuring the proper patching of objects.

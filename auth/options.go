@@ -23,7 +23,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/cache"
 )
 
 // Option is a functional option for the auth package.

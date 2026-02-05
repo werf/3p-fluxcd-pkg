@@ -39,8 +39,8 @@ import (
 	"github.com/go-git/go-git/v5/storage/filesystem"
 	"github.com/go-git/go-git/v5/storage/memory"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
 )
 
 func init() {

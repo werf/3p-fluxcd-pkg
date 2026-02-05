@@ -27,7 +27,7 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 func TestDelete(t *testing.T) {
@@ -137,7 +137,7 @@ func TestDelete_Exclusions(t *testing.T) {
 		}
 
 		meta := map[string]string{
-			"fluxcd.io/ignore": "true",
+			"werf.io/ignore": "true",
 		}
 		configMapClone.SetAnnotations(meta)
 

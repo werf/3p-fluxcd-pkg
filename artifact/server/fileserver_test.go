@@ -29,8 +29,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/artifact/config"
-	"github.com/fluxcd/pkg/artifact/server"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
+	"github.com/werf/3p-fluxcd-pkg/artifact/server"
 )
 
 func Test_Start(t *testing.T) {

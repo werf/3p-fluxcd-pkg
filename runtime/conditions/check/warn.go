@@ -23,8 +23,8 @@ import (
 	"github.com/kylelemons/godebug/pretty"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/runtime/conditions"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions"
 )
 
 // Negative polarity condition present when Ready condition is True.

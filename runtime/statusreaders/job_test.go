@@ -25,7 +25,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"github.com/fluxcd/cli-utils/pkg/kstatus/status"
-	"github.com/fluxcd/pkg/runtime/patch"
+	"github.com/werf/3p-fluxcd-pkg/runtime/patch"
 )
 
 func Test_jobConditions(t *testing.T) {

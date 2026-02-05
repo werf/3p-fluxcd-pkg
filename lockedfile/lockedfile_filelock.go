@@ -10,7 +10,7 @@ package lockedfile
 import (
 	"os"
 
-	"github.com/fluxcd/pkg/lockedfile/filelock"
+	"github.com/werf/3p-fluxcd-pkg/lockedfile/filelock"
 )
 
 func openFile(name string, flag int, perm os.FileMode) (*os.File, error) {

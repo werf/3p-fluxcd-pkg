@@ -32,7 +32,7 @@ import (
 	"sigs.k8s.io/kustomize/api/resource"
 	"sigs.k8s.io/yaml"
 
-	"github.com/fluxcd/pkg/envsubst"
+	"github.com/werf/3p-fluxcd-pkg/envsubst"
 )
 
 const (
@@ -46,7 +46,7 @@ const (
 	postBuildField          = "postBuild"
 	substituteFromField     = "substituteFrom"
 	substituteField         = "substitute"
-	substituteAnnotationKey = "kustomize.toolkit.fluxcd.io/substitute"
+	substituteAnnotationKey = "kustomize.werf.io/substitute"
 )
 
 // SubstituteOptions defines the options for the variable substitutions operation.
@@ -76,7 +76,7 @@ func SubstituteWithStrict(strict bool) SubstituteOption {
 
 // SubstituteVariables replaces the vars with their values in the specified resource.
 // If a resource is labeled or annotated with
-// 'kustomize.toolkit.fluxcd.io/substitute: disabled' the substitution is skipped.
+// 'kustomize.werf.io/substitute: disabled' the substitution is skipped.
 func SubstituteVariables(
 	ctx context.Context,
 	kubeClient client.Client,

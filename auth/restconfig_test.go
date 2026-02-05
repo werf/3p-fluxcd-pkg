@@ -28,8 +28,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/cache"
 )
 
 func TestParseClusterAddress(t *testing.T) {

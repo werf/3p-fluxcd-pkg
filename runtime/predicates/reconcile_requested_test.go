@@ -25,7 +25,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/event"
 
-	pkgmetav1 "github.com/fluxcd/pkg/apis/meta"
+	pkgmetav1 "github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 func TestReconcileRequestedPredicateUpdate(t *testing.T) {

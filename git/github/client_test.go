@@ -30,8 +30,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/cache"
-	"github.com/fluxcd/pkg/ssh"
+	"github.com/werf/3p-fluxcd-pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/ssh"
 )
 
 func TestClient_Options(t *testing.T) {

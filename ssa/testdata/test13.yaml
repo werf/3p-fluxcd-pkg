@@ -4,5 +4,5 @@ metadata:
   name: "data-%[1]s-excluded"
   namespace: "%[1]s"
   annotations:
-    ssa.fluxcd.io/exclude: "true"
+    ssa.werf.io/exclude: "true"
 data: {}

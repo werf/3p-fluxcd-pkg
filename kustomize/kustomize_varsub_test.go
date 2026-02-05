@@ -25,7 +25,7 @@ import (
 	. "github.com/onsi/gomega"
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 
-	"github.com/fluxcd/pkg/kustomize"
+	"github.com/werf/3p-fluxcd-pkg/kustomize"
 )
 
 func TestKustomization_Varsub(t *testing.T) {

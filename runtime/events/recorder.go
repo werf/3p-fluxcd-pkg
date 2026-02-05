@@ -37,8 +37,8 @@ import (
 	"k8s.io/client-go/tools/reference"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	eventv1 "github.com/fluxcd/pkg/apis/event/v1beta1"
-	"github.com/fluxcd/pkg/runtime/logger"
+	eventv1 "github.com/werf/3p-fluxcd-pkg/apis/event/v1beta1"
+	"github.com/werf/3p-fluxcd-pkg/runtime/logger"
 )
 
 // Recorder posts events to the Kubernetes API and any other event recorder webhook address, like the GitOps Toolkit

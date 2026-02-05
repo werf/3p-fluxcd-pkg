@@ -1,12 +1,12 @@
-module github.com/fluxcd/pkg/helmtestserver
+module github.com/werf/3p-fluxcd-pkg/helmtestserver
 
 go 1.25.0
 
-replace github.com/fluxcd/pkg/testserver => ../testserver
+replace github.com/werf/3p-fluxcd-pkg/testserver => ../testserver
 
 require (
 	github.com/ProtonMail/go-crypto v1.3.0
-	github.com/fluxcd/pkg/testserver v0.13.0
+	github.com/werf/3p-fluxcd-pkg/testserver v0.13.0-nelm.1
 	helm.sh/helm/v3 v3.19.2
 	sigs.k8s.io/yaml v1.6.0
 )

@@ -22,7 +22,7 @@ import (
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/fluxcd/pkg/runtime/secrets"
+	"github.com/werf/3p-fluxcd-pkg/runtime/secrets"
 )
 
 func TestMakeTLSSecret(t *testing.T) {

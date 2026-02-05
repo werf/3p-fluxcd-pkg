@@ -22,7 +22,7 @@ import (
 
 	securejoin "github.com/cyphar/filepath-securejoin"
 
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 // LocalPath returns the secure local path of the given artifact

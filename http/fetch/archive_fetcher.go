@@ -37,7 +37,7 @@ import (
 	"github.com/opencontainers/go-digest"
 	_ "github.com/opencontainers/go-digest/blake3"
 
-	"github.com/fluxcd/pkg/tar"
+	"github.com/werf/3p-fluxcd-pkg/tar"
 )
 
 // ArchiveFetcher is a flexible API for downloading an archive from an HTTP server,

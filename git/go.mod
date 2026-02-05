@@ -1,19 +1,19 @@
-module github.com/fluxcd/pkg/git
+module github.com/werf/3p-fluxcd-pkg/git
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/cache => ../cache
-	github.com/fluxcd/pkg/ssh => ../ssh
+	github.com/werf/3p-fluxcd-pkg/cache => ../cache
+	github.com/werf/3p-fluxcd-pkg/ssh => ../ssh
 )
 
 require (
 	github.com/ProtonMail/go-crypto v1.3.0
 	github.com/bradleyfalzon/ghinstallation/v2 v2.17.0
 	github.com/cyphar/filepath-securejoin v0.6.0
-	github.com/fluxcd/pkg/cache v0.12.0
-	github.com/fluxcd/pkg/ssh v0.23.0
 	github.com/onsi/gomega v1.38.2
+	github.com/werf/3p-fluxcd-pkg/cache v0.12.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/ssh v0.23.0-nelm.1
 	golang.org/x/net v0.47.0
 )
 

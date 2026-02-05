@@ -33,7 +33,7 @@ import (
 
 	"github.com/fluxcd/cli-utils/pkg/kstatus/polling"
 
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 var (

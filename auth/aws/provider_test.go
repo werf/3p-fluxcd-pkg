@@ -30,8 +30,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/aws"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/aws"
 )
 
 func TestProvider_NewControllerToken(t *testing.T) {
@@ -148,7 +148,7 @@ func TestProvider_NewTokenForServiceAccount(t *testing.T) {
 				t:                  t,
 				argRegion:          "us-east-1",
 				argRoleARN:         tt.roleARN,
-				argRoleSessionName: "test-sa.test-ns.us-east-1.fluxcd.io",
+				argRoleSessionName: "test-sa.test-ns.us-east-1.werf.io",
 				argOIDCToken:       "oidc-token",
 				argProxyURL:        &url.URL{Scheme: "http", Host: "proxy.example.com"},
 				argSTSEndpoint:     "https://sts.amazonaws.com",

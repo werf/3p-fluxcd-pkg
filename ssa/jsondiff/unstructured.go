@@ -25,9 +25,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	ssaerrors "github.com/fluxcd/pkg/ssa/errors"
-	"github.com/fluxcd/pkg/ssa/normalize"
-	"github.com/fluxcd/pkg/ssa/utils"
+	ssaerrors "github.com/werf/3p-fluxcd-pkg/ssa/errors"
+	"github.com/werf/3p-fluxcd-pkg/ssa/normalize"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 // IgnorePathRoot ignores the root of a JSON document, i.e., the entire

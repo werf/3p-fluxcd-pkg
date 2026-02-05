@@ -45,7 +45,7 @@ const workloadIdentityProviderPattern = `^projects/\d{1,30}/locations/global/wor
 var workloadIdentityProviderRegex = regexp.MustCompile(workloadIdentityProviderPattern)
 
 func getWorkloadIdentityProviderAudience(serviceAccount corev1.ServiceAccount) (string, error) {
-	const key = "gcp.auth.fluxcd.io/workload-identity-provider"
+	const key = "gcp.auth.werf.io/workload-identity-provider"
 	wip := serviceAccount.Annotations[key]
 	if wip == "" {
 		return "", nil

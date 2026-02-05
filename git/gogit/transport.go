@@ -24,8 +24,8 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/transport/ssh"
 	gossh "golang.org/x/crypto/ssh"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/ssh/knownhosts"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/ssh/knownhosts"
 )
 
 // transportAuth constructs the transport.AuthMethod for the git.Transport of

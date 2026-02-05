@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/gittestserver
+module github.com/werf/3p-fluxcd-pkg/gittestserver
 
 go 1.25.0
 

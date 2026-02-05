@@ -24,7 +24,7 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/net/http/httpproxy"
 
-	"github.com/fluxcd/pkg/runtime/controller"
+	"github.com/werf/3p-fluxcd-pkg/runtime/controller"
 )
 
 func Test_ConnectionOptions_BindFlags(t *testing.T) {

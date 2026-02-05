@@ -1,20 +1,20 @@
-module github.com/fluxcd/pkg/kustomize
+module github.com/werf/3p-fluxcd-pkg/kustomize
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/apis/kustomize => ../apis/kustomize
-	github.com/fluxcd/pkg/envsubst => ../envsubst
-	github.com/fluxcd/pkg/sourceignore => ../sourceignore
+	github.com/werf/3p-fluxcd-pkg/apis/kustomize => ../apis/kustomize
+	github.com/werf/3p-fluxcd-pkg/envsubst => ../envsubst
+	github.com/werf/3p-fluxcd-pkg/sourceignore => ../sourceignore
 )
 
 require (
-	github.com/fluxcd/pkg/apis/kustomize v1.14.0
-	github.com/fluxcd/pkg/envsubst v1.5.0
-	github.com/fluxcd/pkg/sourceignore v0.15.0
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/onsi/gomega v1.38.2
 	github.com/otiai10/copy v1.14.1
+	github.com/werf/3p-fluxcd-pkg/apis/kustomize v1.14.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/envsubst v1.5.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/sourceignore v0.15.0-nelm.1
 	k8s.io/api v0.34.2
 	k8s.io/apiextensions-apiserver v0.34.2
 	k8s.io/apimachinery v0.34.2

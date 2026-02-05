@@ -28,7 +28,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/name"
 	gcrv1 "github.com/google/go-containerregistry/pkg/v1"
 
-	"github.com/fluxcd/pkg/tar"
+	"github.com/werf/3p-fluxcd-pkg/tar"
 )
 
 var (

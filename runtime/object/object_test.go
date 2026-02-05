@@ -24,7 +24,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/runtime/conditions/testdata"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions/testdata"
 )
 
 func TestGetStatusLastHandledReconcileAt(t *testing.T) {

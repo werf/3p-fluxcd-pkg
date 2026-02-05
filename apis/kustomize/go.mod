@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/apis/kustomize
+module github.com/werf/3p-fluxcd-pkg/apis/kustomize
 
 go 1.25.0
 

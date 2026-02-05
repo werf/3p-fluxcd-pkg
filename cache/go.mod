@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/cache
+module github.com/werf/3p-fluxcd-pkg/cache
 
 go 1.25.0
 

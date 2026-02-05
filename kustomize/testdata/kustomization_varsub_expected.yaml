@@ -39,7 +39,7 @@ kind: ConfigMap
 metadata:
   labels:
     environment: ${cluster_env:=dev}
-    kustomize.toolkit.fluxcd.io/substitute: disabled
+    kustomize.werf.io/substitute: disabled
     region: ${cluster_region}
   name: app-vars
   namespace: apps

@@ -19,7 +19,7 @@ package repository
 import (
 	"context"
 
-	"github.com/fluxcd/pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git"
 )
 
 // Reader knows how to perform local and remote read operations

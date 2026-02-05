@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/sourceignore
+module github.com/werf/3p-fluxcd-pkg/sourceignore
 
 go 1.25.0
 

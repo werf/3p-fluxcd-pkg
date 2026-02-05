@@ -30,8 +30,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/gcp"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/gcp"
 )
 
 func TestProvider_NewControllerToken(t *testing.T) {
@@ -110,7 +110,7 @@ func TestProvider_NewTokenForServiceAccount(t *testing.T) {
 				UniverseDomain:       "googleapis.com",
 			},
 			annotations: map[string]string{
-				"gcp.auth.fluxcd.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
+				"gcp.auth.werf.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
 			},
 		},
 		{
@@ -128,8 +128,8 @@ func TestProvider_NewTokenForServiceAccount(t *testing.T) {
 				UniverseDomain:       "googleapis.com",
 			},
 			annotations: map[string]string{
-				"iam.gke.io/gcp-service-account":                "test-sa@project-id.iam.gserviceaccount.com",
-				"gcp.auth.fluxcd.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
+				"iam.gke.io/gcp-service-account":              "test-sa@project-id.iam.gserviceaccount.com",
+				"gcp.auth.werf.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
 			},
 		},
 		{
@@ -142,9 +142,9 @@ func TestProvider_NewTokenForServiceAccount(t *testing.T) {
 		{
 			name: "invalid workload identity provider",
 			annotations: map[string]string{
-				"gcp.auth.fluxcd.io/workload-identity-provider": "foobar",
+				"gcp.auth.werf.io/workload-identity-provider": "foobar",
 			},
-			err: `invalid gcp.auth.fluxcd.io/workload-identity-provider annotation: 'foobar'. must match ^projects/\d{1,30}/locations/global/workloadIdentityPools/[^/]{1,100}/providers/[^/]{1,100}$`,
+			err: `invalid gcp.auth.werf.io/workload-identity-provider annotation: 'foobar'. must match ^projects/\d{1,30}/locations/global/workloadIdentityPools/[^/]{1,100}/providers/[^/]{1,100}$`,
 		},
 	} {
 		t.Run(tt.name, func(t *testing.T) {
@@ -196,7 +196,7 @@ func TestProvider_GetAudience(t *testing.T) {
 		{
 			name: "federation",
 			annotations: map[string]string{
-				"gcp.auth.fluxcd.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
+				"gcp.auth.werf.io/workload-identity-provider": "projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
 			},
 			expected: "//iam.googleapis.com/projects/1234567890/locations/global/workloadIdentityPools/test-pool/providers/test-provider",
 		},

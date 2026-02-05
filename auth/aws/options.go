@@ -62,7 +62,7 @@ func getRoleARN(serviceAccount corev1.ServiceAccount) (string, error) {
 func getRoleSessionName(serviceAccount corev1.ServiceAccount, region string) string {
 	name := serviceAccount.Name
 	namespace := serviceAccount.Namespace
-	return fmt.Sprintf("%s.%s.%s.fluxcd.io", name, namespace, region)
+	return fmt.Sprintf("%s.%s.%s.werf.io", name, namespace, region)
 }
 
 const clusterPattern = `^arn:aws[\w-]*:eks:([^:]{1,100}):[0-9]{1,30}:cluster/(.{1,200})$`

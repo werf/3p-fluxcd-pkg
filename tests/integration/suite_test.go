@@ -38,8 +38,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	"github.com/fluxcd/pkg/git"
 	"github.com/fluxcd/test-infra/tftestenv"
+	"github.com/werf/3p-fluxcd-pkg/git"
 )
 
 const (

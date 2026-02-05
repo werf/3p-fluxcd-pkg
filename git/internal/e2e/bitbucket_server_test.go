@@ -30,9 +30,9 @@ import (
 	. "github.com/onsi/gomega"
 
 	bitbucket "github.com/fluxcd/go-git-providers/stash"
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/gogit"
 	"github.com/go-logr/logr"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
 )
 
 const (

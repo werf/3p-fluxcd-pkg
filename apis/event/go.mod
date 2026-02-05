@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/apis/event
+module github.com/werf/3p-fluxcd-pkg/apis/event
 
 go 1.25.0
 

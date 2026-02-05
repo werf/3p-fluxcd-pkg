@@ -23,7 +23,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/spf13/pflag"
 
-	"github.com/fluxcd/pkg/runtime/controller"
+	"github.com/werf/3p-fluxcd-pkg/runtime/controller"
 )
 
 func Test_RateLimiterOptions_BindFlags(t *testing.T) {

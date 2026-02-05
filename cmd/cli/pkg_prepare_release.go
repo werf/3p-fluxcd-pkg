@@ -24,7 +24,7 @@ import (
 	"github.com/spf13/cobra"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/pkg/cmd/internal"
+	"github.com/werf/3p-fluxcd-pkg/cmd/internal"
 )
 
 var pkgPrepareReleaseCmd = &cobra.Command{

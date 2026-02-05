@@ -70,7 +70,7 @@ func testjobExecutionWithArgs(t *testing.T, args []string, opts ...jobOption) {
 	job.Spec.Template.Spec.RestartPolicy = corev1.RestartPolicyNever
 
 	job.Spec.Template.Labels = map[string]string{
-		"test.fluxcd.io/job": job.Name,
+		"test.werf.io/job": job.Name,
 	}
 
 	if enableWI {
@@ -127,7 +127,7 @@ func testjobExecutionWithArgs(t *testing.T, args []string, opts ...jobOption) {
 	g.Expect(testEnv.Client.List(ctx, podList, &client.ListOptions{
 		Namespace: job.Namespace,
 		LabelSelector: labels.SelectorFromSet(labels.Set{
-			"test.fluxcd.io/job": job.Name,
+			"test.werf.io/job": job.Name,
 		}),
 	})).To(Succeed())
 

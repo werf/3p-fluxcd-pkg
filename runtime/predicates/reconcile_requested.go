@@ -20,7 +20,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	metav1 "github.com/fluxcd/pkg/apis/meta"
+	metav1 "github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 // ReconcileRequestedPredicate implements an update predicate function for meta.ReconcileRequestAnnotation changes.

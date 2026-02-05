@@ -22,7 +22,7 @@ import (
 )
 
 // Group is the API Group for the Event API.
-const Group = "event.toolkit.fluxcd.io"
+const Group = "event.werf.io"
 
 // These constants define valid event severity values.
 const (

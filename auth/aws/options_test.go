@@ -21,7 +21,7 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/auth/aws"
+	"github.com/werf/3p-fluxcd-pkg/auth/aws"
 )
 
 func TestValidateSTSEndpoint(t *testing.T) {

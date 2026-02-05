@@ -35,7 +35,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/fluxcd/pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 // ProviderName is the name of the Azure authentication provider.

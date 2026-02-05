@@ -31,7 +31,7 @@ var (
 )
 
 // toUnstructured converts a runtime object into Unstructured.
-// Based on https://github.com/fluxcd/pkg/blob/b4a14854c75753ea9431693b39c4be672f246552/runtime/patch/utils.go#L55.
+// Based on https://github.com/werf/3p-fluxcd-pkg/blob/b4a14854c75753ea9431693b39c4be672f246552/runtime/patch/utils.go#L55.
 func toUnstructured(obj runtime.Object) (*unstructured.Unstructured, error) {
 	// If the incoming object is already unstructured, perform a deep copy first
 	// otherwise DefaultUnstructuredConverter ends up returning the inner map without

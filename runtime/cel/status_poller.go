@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/fluxcd/pkg/apis/kustomize"
+	"github.com/werf/3p-fluxcd-pkg/apis/kustomize"
 )
 
 // PollerWithCustomHealthChecks creates a list of constructors for

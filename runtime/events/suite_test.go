@@ -27,7 +27,7 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/pkg/runtime/testenv"
+	"github.com/werf/3p-fluxcd-pkg/runtime/testenv"
 )
 
 var (

@@ -29,8 +29,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/yaml"
 
-	"github.com/fluxcd/pkg/ssa/normalize"
-	"github.com/fluxcd/pkg/ssa/utils"
+	"github.com/werf/3p-fluxcd-pkg/ssa/normalize"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 func TestDiff(t *testing.T) {
@@ -190,7 +190,7 @@ func TestDiff_Exclusions(t *testing.T) {
 	}
 
 	meta := map[string]string{
-		"fluxcd.io/ignore": "true",
+		"werf.io/ignore": "true",
 	}
 	opts := DefaultDiffOptions()
 	opts.Exclusions = meta
@@ -243,7 +243,7 @@ func TestDiff_IfNotPresent_OnExisting(t *testing.T) {
 	}
 
 	meta := map[string]string{
-		"fluxcd.io/ignore": "true",
+		"werf.io/ignore": "true",
 	}
 
 	_, configMap := getFirstObject(objects, "ConfigMap", id)
@@ -279,7 +279,7 @@ func TestDiff_IfNotPresent_OnExisting(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		configMapClone.SetAnnotations(map[string]string{"fluxcd.io/ignore": ""})
+		configMapClone.SetAnnotations(map[string]string{"werf.io/ignore": ""})
 		configMapClone.SetManagedFields(nil)
 		entry, _, _, err := manager.Diff(ctx, configMapClone, opts)
 		if err != nil {
@@ -334,7 +334,7 @@ func TestDiff_IfNotPresent_OnObject(t *testing.T) {
 	}
 
 	meta := map[string]string{
-		"fluxcd.io/ignore": "true",
+		"werf.io/ignore": "true",
 	}
 	opts := DefaultDiffOptions()
 	opts.IfNotPresentSelector = meta

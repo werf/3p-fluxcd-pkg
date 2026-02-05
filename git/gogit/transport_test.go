@@ -30,7 +30,7 @@ import (
 	gossh "golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
 
-	"github.com/fluxcd/pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git"
 )
 
 const (

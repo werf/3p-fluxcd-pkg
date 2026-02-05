@@ -1,28 +1,28 @@
-module github.com/fluxcd/pkg/artifact
+module github.com/werf/3p-fluxcd-pkg/artifact
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/apis/meta => ../apis/meta
-	github.com/fluxcd/pkg/lockedfile => ../lockedfile
-	github.com/fluxcd/pkg/oci => ../oci
-	github.com/fluxcd/pkg/sourceignore => ../sourceignore
-	github.com/fluxcd/pkg/tar => ../tar
-	github.com/fluxcd/pkg/version => ../version
+	github.com/werf/3p-fluxcd-pkg/apis/meta => ../apis/meta
+	github.com/werf/3p-fluxcd-pkg/lockedfile => ../lockedfile
+	github.com/werf/3p-fluxcd-pkg/oci => ../oci
+	github.com/werf/3p-fluxcd-pkg/sourceignore => ../sourceignore
+	github.com/werf/3p-fluxcd-pkg/tar => ../tar
+	github.com/werf/3p-fluxcd-pkg/version => ../version
 )
 
 require (
 	github.com/cyphar/filepath-securejoin v0.6.0
-	github.com/fluxcd/pkg/apis/meta v1.23.0
-	github.com/fluxcd/pkg/lockedfile v0.7.0
-	github.com/fluxcd/pkg/oci v0.58.0
-	github.com/fluxcd/pkg/sourceignore v0.15.0
-	github.com/fluxcd/pkg/tar v0.16.0
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/onsi/gomega v1.38.2
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/go-digest/blake3 v0.0.0-20250813155314-89707e38ad1a
 	github.com/spf13/pflag v1.0.10
+	github.com/werf/3p-fluxcd-pkg/apis/meta v1.23.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/lockedfile v0.7.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/oci v0.58.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/sourceignore v0.15.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/tar v0.16.0-nelm.1
 	k8s.io/apimachinery v0.34.2
 )
 
@@ -36,7 +36,6 @@ require (
 	github.com/docker/cli v28.4.0+incompatible // indirect
 	github.com/docker/distribution v2.8.3+incompatible // indirect
 	github.com/docker/docker-credential-helpers v0.9.3 // indirect
-	github.com/fluxcd/pkg/version v0.11.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.6.2 // indirect
@@ -55,6 +54,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/vbatts/tar-split v0.12.1 // indirect
+	github.com/werf/3p-fluxcd-pkg/version v0.11.0-nelm.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.3 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect

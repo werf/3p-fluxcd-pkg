@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/apis/meta
+module github.com/werf/3p-fluxcd-pkg/apis/meta
 
 go 1.25.0
 

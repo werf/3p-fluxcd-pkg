@@ -21,7 +21,7 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/artifact/config"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
 )
 
 func Test_Options_GetAdvertisedAddress(t *testing.T) {

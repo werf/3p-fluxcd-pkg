@@ -1,4 +1,4 @@
-module github.com/fluxcd/pkg/tar
+module github.com/werf/3p-fluxcd-pkg/tar
 
 go 1.25.0
 

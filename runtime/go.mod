@@ -1,21 +1,17 @@
-module github.com/fluxcd/pkg/runtime
+module github.com/werf/3p-fluxcd-pkg/runtime
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/apis/acl => ../apis/acl
-	github.com/fluxcd/pkg/apis/event => ../apis/event
-	github.com/fluxcd/pkg/apis/kustomize => ../apis/kustomize
-	github.com/fluxcd/pkg/apis/meta => ../apis/meta
+	github.com/werf/3p-fluxcd-pkg/apis/acl => ../apis/acl
+	github.com/werf/3p-fluxcd-pkg/apis/event => ../apis/event
+	github.com/werf/3p-fluxcd-pkg/apis/kustomize => ../apis/kustomize
+	github.com/werf/3p-fluxcd-pkg/apis/meta => ../apis/meta
 )
 
 require (
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20240806141605-e8a1dd7889d6
 	github.com/fluxcd/cli-utils v0.36.0-flux.15
-	github.com/fluxcd/pkg/apis/acl v0.9.0
-	github.com/fluxcd/pkg/apis/event v0.21.0
-	github.com/fluxcd/pkg/apis/kustomize v1.14.0
-	github.com/fluxcd/pkg/apis/meta v1.23.0
 	github.com/go-logr/logr v1.4.3
 	github.com/go-logr/zapr v1.3.0
 	github.com/google/cel-go v0.26.1
@@ -27,6 +23,10 @@ require (
 	github.com/prometheus/client_golang v1.23.2
 	github.com/spf13/pflag v1.0.10
 	github.com/stretchr/testify v1.11.1
+	github.com/werf/3p-fluxcd-pkg/apis/acl v0.9.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/apis/event v0.21.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/apis/kustomize v1.14.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/apis/meta v1.23.0-nelm.1
 	go.uber.org/zap v1.27.0
 	golang.org/x/net v0.47.0
 	k8s.io/api v0.34.2

@@ -28,10 +28,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/generic"
-	"github.com/fluxcd/pkg/auth/utils"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/generic"
+	"github.com/werf/3p-fluxcd-pkg/auth/utils"
 )
 
 func TestProvider_NewControllerToken(t *testing.T) {

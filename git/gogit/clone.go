@@ -33,9 +33,9 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/transport"
 	"github.com/go-git/go-git/v5/storage/memory"
 
-	"github.com/fluxcd/pkg/git"
-	"github.com/fluxcd/pkg/git/repository"
-	"github.com/fluxcd/pkg/version"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	"github.com/werf/3p-fluxcd-pkg/git/repository"
+	"github.com/werf/3p-fluxcd-pkg/version"
 )
 
 const tagDereferenceSuffix = "^{}"

@@ -133,7 +133,7 @@ func WithMaxConcurrentReconciles(max int) Option {
 //	import (
 //	    "testing"
 //
-//	    "github.com/fluxcd/pkg/runtime/testenv"
+//	    "github.com/werf/3p-fluxcd-pkg/runtime/testenv"
 //	    ctrl "sigs.k8s.io/controller-runtime"
 //	    "sigs.k8s.io/controller-runtime/pkg/log/zap"
 //	}

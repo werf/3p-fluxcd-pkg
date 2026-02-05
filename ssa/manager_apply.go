@@ -32,8 +32,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	ssaerrors "github.com/fluxcd/pkg/ssa/errors"
-	"github.com/fluxcd/pkg/ssa/utils"
+	ssaerrors "github.com/werf/3p-fluxcd-pkg/ssa/errors"
+	"github.com/werf/3p-fluxcd-pkg/ssa/utils"
 )
 
 // ApplyOptions contains options for server-side apply requests.

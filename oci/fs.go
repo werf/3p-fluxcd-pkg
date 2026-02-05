@@ -16,7 +16,7 @@ limitations under the License.
 
 package oci
 
-import "github.com/fluxcd/pkg/oci/internal/fs"
+import "github.com/werf/3p-fluxcd-pkg/oci/internal/fs"
 
 // RenameWithFallback attempts to rename a file or directory, but falls back to
 // copying in the event of a cross-device link error. If the fallback copy

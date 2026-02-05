@@ -25,9 +25,9 @@ import (
 
 	tfjson "github.com/hashicorp/terraform-json"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/auth/gcp"
 	"github.com/fluxcd/test-infra/tftestenv"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/auth/gcp"
 )
 
 const (
@@ -37,7 +37,7 @@ const (
 
 	// gcpWorkloadIdentityProviderAnnotation is the key for the annotation on the kubernetes serviceaccount
 	// with the name of the workload identity provider on GCP.
-	gcpWorkloadIdentityProviderAnnotation = "gcp.auth.fluxcd.io/workload-identity-provider"
+	gcpWorkloadIdentityProviderAnnotation = "gcp.auth.werf.io/workload-identity-provider"
 )
 
 // createKubeconfigGKE constructs kubeconfig from the terraform state output at

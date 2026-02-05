@@ -26,10 +26,10 @@ import (
 	securejoin "github.com/cyphar/filepath-securejoin"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	intdigest "github.com/fluxcd/pkg/artifact/digest"
-	"github.com/fluxcd/pkg/oci"
-	pkgtar "github.com/fluxcd/pkg/tar"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	intdigest "github.com/werf/3p-fluxcd-pkg/artifact/digest"
+	"github.com/werf/3p-fluxcd-pkg/oci"
+	pkgtar "github.com/werf/3p-fluxcd-pkg/tar"
 )
 
 // AtomicWriteFile atomically writes the io.Reader contents to the meta.Artifact path.

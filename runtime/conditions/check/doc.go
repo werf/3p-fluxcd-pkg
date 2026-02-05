@@ -25,7 +25,7 @@ limitations under the License.
 //
 //	import (
 //	    ...
-//	    "github.com/fluxcd/pkg/runtime/conditions/check"
+//	    "github.com/werf/3p-fluxcd-pkg/runtime/conditions/check"
 //	)
 //
 //	func TestFoo() {

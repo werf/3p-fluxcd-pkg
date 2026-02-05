@@ -26,7 +26,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/fluxcd/pkg/envsubst/parse"
+	"github.com/werf/3p-fluxcd-pkg/envsubst/parse"
 )
 
 // state represents the state of template execution. It is not part of the

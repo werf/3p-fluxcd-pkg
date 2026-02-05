@@ -18,7 +18,7 @@ package meta
 
 const (
 	// LabelKeyWatch is used to indicate that a resource should be watched by Flux.
-	LabelKeyWatch = "reconcile.fluxcd.io/watch"
+	LabelKeyWatch = "reconcile.werf.io/watch"
 
 	// LabelValueWatchEnabled is the value for LabelKeyWatch that indicates a resource should be watched.
 	LabelValueWatchEnabled = "Enabled"

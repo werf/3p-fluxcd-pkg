@@ -32,7 +32,7 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/fluxcd/pkg/runtime/conditions/testdata"
+	"github.com/werf/3p-fluxcd-pkg/runtime/conditions/testdata"
 )
 
 func TestUnstructuredGetConditions(t *testing.T) {

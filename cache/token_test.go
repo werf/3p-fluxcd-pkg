@@ -24,7 +24,7 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/cache"
+	"github.com/werf/3p-fluxcd-pkg/cache"
 )
 
 type testToken struct {

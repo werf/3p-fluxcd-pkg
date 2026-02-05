@@ -1,10 +1,10 @@
-module github.com/fluxcd/pkg/auth
+module github.com/werf/3p-fluxcd-pkg/auth
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/apis/meta => ../apis/meta
-	github.com/fluxcd/pkg/cache => ../cache
+	github.com/werf/3p-fluxcd-pkg/apis/meta => ../apis/meta
+	github.com/werf/3p-fluxcd-pkg/cache => ../cache
 )
 
 require (
@@ -21,11 +21,11 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/eks v1.74.9
 	github.com/aws/aws-sdk-go-v2/service/sts v1.40.2
 	github.com/coreos/go-oidc/v3 v3.16.0
-	github.com/fluxcd/pkg/apis/meta v1.23.0
-	github.com/fluxcd/pkg/cache v0.12.0
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/google/go-containerregistry v0.20.6
 	github.com/onsi/gomega v1.38.2
+	github.com/werf/3p-fluxcd-pkg/apis/meta v1.23.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/cache v0.12.0-nelm.1
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.63.0
 	golang.org/x/oauth2 v0.33.0
 	google.golang.org/api v0.256.0

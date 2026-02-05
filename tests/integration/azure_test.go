@@ -28,9 +28,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/auth/azure"
-	"github.com/fluxcd/pkg/git"
 	"github.com/fluxcd/test-infra/tftestenv"
 	"github.com/google/uuid"
 	tfjson "github.com/hashicorp/terraform-json"
@@ -38,6 +35,9 @@ import (
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v7/graph"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v7/licensing"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v7/memberentitlementmanagement"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/git"
 )
 
 const (

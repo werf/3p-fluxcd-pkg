@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 	"sigs.k8s.io/yaml"
 
-	"github.com/fluxcd/pkg/kustomize"
+	"github.com/werf/3p-fluxcd-pkg/kustomize"
 )
 
 const resourcePath = "./testdata/resources/"

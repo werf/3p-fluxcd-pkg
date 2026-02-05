@@ -25,7 +25,7 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/format/gitignore"
 	kustypes "sigs.k8s.io/kustomize/api/types"
 
-	"github.com/fluxcd/pkg/sourceignore"
+	"github.com/werf/3p-fluxcd-pkg/sourceignore"
 )
 
 // filter must return true if a file should not be included in the archive after inspecting the given path

@@ -31,7 +31,7 @@ import (
 	htransport "google.golang.org/api/transport/http"
 	corev1 "k8s.io/api/core/v1"
 
-	auth "github.com/fluxcd/pkg/auth"
+	auth "github.com/werf/3p-fluxcd-pkg/auth"
 )
 
 // ProviderName is the name of the GCP authentication provider.

@@ -31,10 +31,10 @@ import (
 
 	"github.com/fluxcd/go-git-providers/github"
 	"github.com/fluxcd/go-git-providers/gitprovider"
-	"github.com/fluxcd/pkg/git"
-	pkggithub "github.com/fluxcd/pkg/git/github"
-	"github.com/fluxcd/pkg/git/gogit"
 	gogithub "github.com/google/go-github/v75/github"
+	"github.com/werf/3p-fluxcd-pkg/git"
+	pkggithub "github.com/werf/3p-fluxcd-pkg/git/github"
+	"github.com/werf/3p-fluxcd-pkg/git/gogit"
 )
 
 const (

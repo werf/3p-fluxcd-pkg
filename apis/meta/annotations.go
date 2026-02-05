@@ -20,7 +20,7 @@ const (
 	// ReconcileRequestAnnotation is the annotation used for triggering a reconciliation
 	// outside of a defined interval. The value is interpreted as a token, and any change
 	// in value SHOULD trigger a reconciliation.
-	ReconcileRequestAnnotation string = "reconcile.fluxcd.io/requestedAt"
+	ReconcileRequestAnnotation string = "reconcile.werf.io/requestedAt"
 
 	// ForceRequestAnnotation is the annotation used for triggering a one-off forced
 	// reconciliation, for example, of a HelmRelease when there are no new changes,
@@ -29,7 +29,7 @@ const (
 	// specific controller implementation, but the annotation is used to standardize
 	// the mechanism across controllers. The value is interpreted as a token, and must
 	// equal the value of ReconcileRequestAnnotation in order to trigger a release.
-	ForceRequestAnnotation string = "reconcile.fluxcd.io/forceAt"
+	ForceRequestAnnotation string = "reconcile.werf.io/forceAt"
 )
 
 // ReconcileAnnotationValue returns a value for the reconciliation request annotation, which can be used to detect

@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fluxcd/pkg/artifact/config"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
 )
 
 // Start starts a blocking HTTP file server using the provided configuration options.

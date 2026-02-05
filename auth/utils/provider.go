@@ -19,10 +19,10 @@ package utils
 import (
 	"fmt"
 
-	"github.com/fluxcd/pkg/auth/aws"
-	"github.com/fluxcd/pkg/auth/azure"
-	"github.com/fluxcd/pkg/auth/gcp"
-	"github.com/fluxcd/pkg/auth/generic"
+	"github.com/werf/3p-fluxcd-pkg/auth/aws"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth/gcp"
+	"github.com/werf/3p-fluxcd-pkg/auth/generic"
 )
 
 // ProviderByName looks up the implemented providers by name and type.

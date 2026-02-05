@@ -21,7 +21,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 // Dependent interface defines methods that a Kubernetes resource object should

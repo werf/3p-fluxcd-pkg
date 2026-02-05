@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fluxcd/pkg/tar"
 	. "github.com/onsi/gomega"
+	"github.com/werf/3p-fluxcd-pkg/tar"
 )
 
 func TestBuild(t *testing.T) {

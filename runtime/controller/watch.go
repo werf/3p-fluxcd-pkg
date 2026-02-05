@@ -23,7 +23,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	"github.com/fluxcd/pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
 )
 
 const (
@@ -59,7 +59,7 @@ func (o *WatchOptions) BindFlags(fs *pflag.FlagSet) {
 	fs.BoolVar(&o.AllNamespaces, flagWatchWatchAllNamespaces, true,
 		"Watch for resources in all namespaces, if set to false it will only watch the runtime namespace.")
 	fs.StringVar(&o.LabelSelector, flagWatchLabelSelector, "",
-		"Watch for resources with matching labels e.g. 'sharding.fluxcd.io/shard=shard1'.")
+		"Watch for resources with matching labels e.g. 'sharding.werf.io/shard=shard1'.")
 	fs.StringVar(&o.ConfigsLabelSelector, flagWatchConfigsLabelSelector, meta.LabelKeyWatch+"="+meta.LabelValueWatchEnabled,
 		"Watch for ConfigMaps and Secrets with matching labels.")
 }

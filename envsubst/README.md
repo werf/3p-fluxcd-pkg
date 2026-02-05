@@ -1,6 +1,6 @@
 # envsubst
 
-`github.com/fluxcd/pkg/envsubst` is a Go package for expanding variables in a string using `${var}` syntax.
+`github.com/werf/3p-fluxcd-pkg/envsubst` is a Go package for expanding variables in a string using `${var}` syntax.
 Includes support for bash string replacement functions.
 
 This package is a fork of [drone/envsubst](https://github.com/drone/envsubst).

@@ -27,10 +27,10 @@ import (
 	"github.com/opencontainers/go-digest"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/lockedfile"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/lockedfile"
 
-	"github.com/fluxcd/pkg/artifact/config"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
 )
 
 // Storage manages meta.Artifact tarballs on the local filesystem.

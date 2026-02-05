@@ -27,7 +27,7 @@ import (
 	"helm.sh/helm/v3/pkg/repo"
 	"sigs.k8s.io/yaml"
 
-	"github.com/fluxcd/pkg/testserver"
+	"github.com/werf/3p-fluxcd-pkg/testserver"
 )
 
 const (

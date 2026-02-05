@@ -27,9 +27,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/fluxcd/pkg/apis/meta"
-	"github.com/fluxcd/pkg/artifact/config"
-	. "github.com/fluxcd/pkg/artifact/storage"
+	"github.com/werf/3p-fluxcd-pkg/apis/meta"
+	"github.com/werf/3p-fluxcd-pkg/artifact/config"
+	. "github.com/werf/3p-fluxcd-pkg/artifact/storage"
 )
 
 func TestStorageConstructor(t *testing.T) {

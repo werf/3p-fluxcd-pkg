@@ -85,7 +85,7 @@ func (m *ModuleBump) apply(ctx context.Context, targetModule string, dryRun bool
 	if !m.regex.MatchString(oldContent) {
 		return false, nil
 	}
-	bumpString := fmt.Sprintf("github.com/fluxcd/pkg/%s v%s", m.module, m.newVersion)
+	bumpString := fmt.Sprintf("github.com/werf/3p-fluxcd-pkg/%s v%s", m.module, m.newVersion)
 	newContent := m.regex.ReplaceAllString(oldContent, bumpString)
 	if oldContent == newContent {
 		return false, nil

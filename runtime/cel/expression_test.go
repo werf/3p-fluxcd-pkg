@@ -25,7 +25,7 @@ import (
 	"github.com/google/cel-go/common/types/ref"
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/runtime/cel"
+	"github.com/werf/3p-fluxcd-pkg/runtime/cel"
 )
 
 func TestNewExpression(t *testing.T) {

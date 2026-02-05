@@ -23,7 +23,7 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/fluxcd/pkg/runtime/testenv"
+	"github.com/werf/3p-fluxcd-pkg/runtime/testenv"
 )
 
 var testEnv *testenv.Environment

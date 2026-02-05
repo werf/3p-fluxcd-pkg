@@ -1,27 +1,27 @@
-module github.com/fluxcd/pkg/git/internal/e2e
+module github.com/werf/3p-fluxcd-pkg/git/internal/e2e
 
 go 1.25.0
 
 replace (
-	github.com/fluxcd/pkg/cache => ../../../cache
-	github.com/fluxcd/pkg/git => ../../../git
-	github.com/fluxcd/pkg/git/gogit => ../../gogit
-	github.com/fluxcd/pkg/gittestserver => ../../../gittestserver
-	github.com/fluxcd/pkg/ssh => ../../../ssh
-	github.com/fluxcd/pkg/version => ../../../version
+	github.com/werf/3p-fluxcd-pkg/cache => ../../../cache
+	github.com/werf/3p-fluxcd-pkg/git => ../../../git
+	github.com/werf/3p-fluxcd-pkg/git/gogit => ../../gogit
+	github.com/werf/3p-fluxcd-pkg/gittestserver => ../../../gittestserver
+	github.com/werf/3p-fluxcd-pkg/ssh => ../../../ssh
+	github.com/werf/3p-fluxcd-pkg/version => ../../../version
 )
 
 require (
 	github.com/fluxcd/go-git-providers v0.25.0
-	github.com/fluxcd/pkg/git v0.38.0
-	github.com/fluxcd/pkg/git/gogit v0.42.0
-	github.com/fluxcd/pkg/gittestserver v0.22.0
-	github.com/fluxcd/pkg/ssh v0.23.0
 	github.com/go-git/go-git/v5 v5.16.3
 	github.com/go-logr/logr v1.4.3
 	github.com/google/go-github/v75 v75.0.0
 	github.com/google/uuid v1.6.0
 	github.com/onsi/gomega v1.38.2
+	github.com/werf/3p-fluxcd-pkg/git v0.38.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/git/gogit v0.42.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/gittestserver v0.22.0-nelm.1
+	github.com/werf/3p-fluxcd-pkg/ssh v0.23.0-nelm.1
 )
 
 require (
@@ -36,8 +36,6 @@ require (
 	github.com/cyphar/filepath-securejoin v0.6.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/fluxcd/gitkit v0.6.0 // indirect
-	github.com/fluxcd/pkg/cache v0.12.0 // indirect
-	github.com/fluxcd/pkg/version v0.11.0 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.6.2 // indirect
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
@@ -61,6 +59,8 @@ require (
 	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
 	github.com/skeema/knownhosts v1.3.1 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
+	github.com/werf/3p-fluxcd-pkg/cache v0.12.0-nelm.1 // indirect
+	github.com/werf/3p-fluxcd-pkg/version v0.11.0-nelm.1 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	gitlab.com/gitlab-org/api/client-go v0.142.5 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect

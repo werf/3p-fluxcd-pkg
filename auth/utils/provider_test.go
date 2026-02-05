@@ -21,12 +21,12 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/fluxcd/pkg/auth"
-	"github.com/fluxcd/pkg/auth/aws"
-	"github.com/fluxcd/pkg/auth/azure"
-	"github.com/fluxcd/pkg/auth/gcp"
-	"github.com/fluxcd/pkg/auth/generic"
-	authutils "github.com/fluxcd/pkg/auth/utils"
+	"github.com/werf/3p-fluxcd-pkg/auth"
+	"github.com/werf/3p-fluxcd-pkg/auth/aws"
+	"github.com/werf/3p-fluxcd-pkg/auth/azure"
+	"github.com/werf/3p-fluxcd-pkg/auth/gcp"
+	"github.com/werf/3p-fluxcd-pkg/auth/generic"
+	authutils "github.com/werf/3p-fluxcd-pkg/auth/utils"
 )
 
 func TestProviderByName(t *testing.T) {

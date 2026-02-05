@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	aclapi "github.com/fluxcd/pkg/apis/acl"
+	aclapi "github.com/werf/3p-fluxcd-pkg/apis/acl"
 )
 
 // AccessDeniedError represents a failed access control list check.

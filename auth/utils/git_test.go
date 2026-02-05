@@ -23,7 +23,7 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	authutils "github.com/fluxcd/pkg/auth/utils"
+	authutils "github.com/werf/3p-fluxcd-pkg/auth/utils"
 )
 
 func TestGetGitCredentials(t *testing.T) {
